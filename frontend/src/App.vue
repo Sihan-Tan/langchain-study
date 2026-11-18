@@ -25,6 +25,7 @@ function isActive(name: string): boolean {
             { name: 'markdown-messages', label: 'Markdown' },
             { name: 'tool-calling', label: 'Tool Calling' },
             { name: 'human-in-the-loop', label: 'Human-in-the-Loop' },
+            { name: 'branch-chat', label: 'Branch Chat' },
           ]"
           :key="entry.name"
           :to="{ name: entry.name }"

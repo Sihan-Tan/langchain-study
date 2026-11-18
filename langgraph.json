@@ -3,6 +3,7 @@
   "graphs": {
     "simple_agent": "./agents/simple.ts:agent",
     "tool_agent": "./agents/base.ts:tool_agent",
-    "human_in_the_loop_agent": "./agents/human-in-the-loop.ts:agent"
+    "human_in_the_loop_agent": "./agents/human-in-the-loop.ts:agent",
+    "branch_chat_agent": "./agents/branch-chat.ts:agent"
   }
 }
