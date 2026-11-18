@@ -1,0 +1,62 @@
+{
+	"name": "langchain-study",
+	"private": true,
+	"type": "module",
+	"scripts": {
+		"start": "tsx index.ts",
+		"test:model": "tsx testModel.ts",
+		"test:tool": "tsx testTool.ts",
+		"test:memory": "tsx testMemory.ts",
+		"test:sse": "tsx testSSE.ts",
+		"dev:agent": "langgraphjs dev --port 2024 --host 0.0.0.0 --no-browser",
+		"dev:frontend": "vite ./frontend --port 4100",
+		"dev": "concurrently \"pnpm:dev:agent\" \"pnpm:dev:frontend\"",
+		"build": "vite build ./frontend",
+		"typecheck": "vue-tsc --noEmit -p frontend/tsconfig.json",
+		"preview": "vite preview ./frontend --port 4100"
+	},
+	"dependencies": {
+		"@git-diff-view/file": "^0.1.5",
+		"@git-diff-view/vue": "^0.1.5",
+		"@iconify-json/vscode-icons": "^1.2.51",
+		"@json-render/core": "^0.19.0",
+		"@json-render/vue": "^0.19.0",
+		"@langchain/core": "^1.4.1",
+		"@langchain/langgraph": "^1.5.0",
+		"@langchain/langgraph-sdk": "^1.9.18",
+		"@langchain/openai": "^1.6.2",
+		"@langchain/react": "^1.2.14",
+		"@langchain/vue": "^1.2.0",
+		"deepagents": "^1.15.0",
+		"dompurify": "^3.4.6",
+		"dotenv": "^18.0.8",
+		"katex": "^0.19",
+		"langchain": "^1.5.18",
+		"langsmith": "^0.11.8",
+		"marked": "^18.0.4",
+		"react-markdown": "^10.1.0",
+		"remark-gfm": "^4.0.1",
+		"shiki": "^4.1.0",
+		"vue": "^3",
+		"zod": "^4.6.7"
+	},
+	"devDependencies": {
+		"@langchain/langgraph-cli": "^1.5.1",
+		"@tailwindcss/postcss": "^4",
+		"@types/dompurify": "^3.2.0",
+		"@types/node": "^26.6.5",
+		"@vitejs/plugin-vue": "^6",
+		"concurrently": "^9.2.1",
+		"postcss": "^8",
+		"tailwindcss": "^4",
+		"tsx": "^4.20.6",
+		"typescript": "^5.9.3",
+		"vite": "^8.0.14",
+		"vue-tsc": "^3.3.14"
+	},
+	"pnpm": {
+		"onlyBuiltDependencies": [
+			"esbuild"
+		]
+	}
+}
