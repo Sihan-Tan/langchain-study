@@ -2,6 +2,7 @@
   "node_version": "22",
   "graphs": {
     "simple_agent": "./agents/simple.ts:agent",
-    "tool_agent": "./agents/base.ts:tool_agent"
+    "tool_agent": "./agents/base.ts:tool_agent",
+    "human_in_the_loop_agent": "./agents/human-in-the-loop.ts:agent"
   }
 }

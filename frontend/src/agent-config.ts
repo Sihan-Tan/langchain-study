@@ -14,4 +14,5 @@ export const AGENT_SERVER_URL = resolveAgentServerUrl();
 export const SLUG_TO_ASSISTANT: Record<string, string> = {
   "markdown-messages": "simple_agent",
   "tool-calling": "tool_agent",
+  "human-in-the-loop": "human_in_the_loop_agent",
 };
