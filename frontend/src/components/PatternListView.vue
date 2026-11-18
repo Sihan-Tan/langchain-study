@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { useRouter } from "vue-router";
+
 defineProps<{
   slugs: string[];
   frameworkLabel: string;
@@ -8,11 +10,18 @@ const emit = defineEmits<{
   select: [slug: string];
 }>();
 
+const router = useRouter();
+
 function formatPatternLabel(slug: string): string {
   return slug
     .split("-")
     .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
     .join(" ");
+}
+
+function handleSelect(slug: string) {
+  emit("select", slug);
+  router.push({ name: slug });
 }
 </script>
 
@@ -29,7 +38,7 @@ function formatPatternLabel(slug: string): string {
             type="button"
             :title="`${formatPatternLabel(slug)} (${slug})`"
             class="flex w-full min-w-0 cursor-pointer items-center gap-3 overflow-hidden rounded-lg border border-[var(--color-border)] bg-[var(--color-surface-secondary)] px-4 py-3 text-left text-sm whitespace-nowrap text-[var(--color-text)] transition-colors hover:border-[var(--color-primary)] hover:text-[var(--color-primary)]"
-            @click="emit('select', slug)"
+            @click="handleSelect(slug)"
           >
             <span class="min-w-0 flex-1 truncate font-medium">{{ formatPatternLabel(slug) }}</span>
             <span
