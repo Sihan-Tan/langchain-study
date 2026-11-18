@@ -5,6 +5,9 @@ import MarkdownMessagesPreview from "@/patterns/markdown-messages/Preview.vue";
 import ToolCallingPreview from "@/patterns/tool-calling/Preview.vue";
 import HumanInTheLoopPreview from "@/patterns/human-in-the-loop/Preview.vue";
 import BranchChatPreview from "@/patterns/branch-chat/Preview.vue";
+import ReasoningTokensPreview from "@/patterns/reasoning-tokens/Preview.vue";
+import StructuredOutputPreview from "@/patterns/structured-output/Preview.vue";
+
 import PatternListView from "@/components/PatternListView.vue";
 
 export const ROUTE_SLUGS = [
@@ -12,6 +15,8 @@ export const ROUTE_SLUGS = [
   "tool-calling",
   "human-in-the-loop",
   "branch-chat",
+  "reasoning-tokens",
+  "structured-output",
 ] as const;
 
 const routes: RouteRecordRaw[] = [
@@ -43,6 +48,16 @@ const routes: RouteRecordRaw[] = [
     path: "/branch-chat",
     name: "branch-chat",
     component: BranchChatPreview,
+  },
+  {
+    path: "/reasoning-tokens",
+    name: "reasoning-tokens",
+    component: ReasoningTokensPreview,
+  },
+  {
+    path: "/structured-output",
+    name: "structured-output",
+    component: StructuredOutputPreview,
   },
   { path: "/:pathMatch(.*)*", redirect: "/" },
 ];

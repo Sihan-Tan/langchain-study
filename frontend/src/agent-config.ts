@@ -16,4 +16,6 @@ export const SLUG_TO_ASSISTANT: Record<string, string> = {
   "tool-calling": "tool_agent",
   "human-in-the-loop": "human_in_the_loop_agent",
   "branch-chat": "branch_chat_agent",
+  "reasoning-tokens": "reasoning_tokens_agent",
+  "structured-output": "structured_output_agent",
 };
