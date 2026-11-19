@@ -8,6 +8,8 @@ export default defineConfig({
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "src"),
+      "@agents": path.resolve(__dirname, "../", "agents"),
+      "@tools": path.resolve(__dirname, "../", "tools"),
     },
   },
   server: {

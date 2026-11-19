@@ -7,6 +7,8 @@ import HumanInTheLoopPreview from "@/patterns/human-in-the-loop/Preview.vue";
 import BranchChatPreview from "@/patterns/branch-chat/Preview.vue";
 import ReasoningTokensPreview from "@/patterns/reasoning-tokens/Preview.vue";
 import StructuredOutputPreview from "@/patterns/structured-output/Preview.vue";
+import MessageQueuesPreview from "@/patterns/message-queues/Preview.vue";
+import JoinRejoinChatPreview from "@/patterns/join-rejoin/Preview.vue";
 
 import PatternListView from "@/components/PatternListView.vue";
 
@@ -17,6 +19,8 @@ export const ROUTE_SLUGS = [
   "branch-chat",
   "reasoning-tokens",
   "structured-output",
+  "message-queues",
+  "join-rejoin",
 ] as const;
 
 const routes: RouteRecordRaw[] = [
@@ -58,6 +62,16 @@ const routes: RouteRecordRaw[] = [
     path: "/structured-output",
     name: "structured-output",
     component: StructuredOutputPreview,
+  },
+  {
+    path: "/message-queues",
+    name: "message-queues",
+    component: MessageQueuesPreview,
+  },
+  {
+    path: "/join-rejoin",
+    name: "join-rejoin",
+    component: JoinRejoinChatPreview,
   },
   { path: "/:pathMatch(.*)*", redirect: "/" },
 ];

@@ -18,4 +18,6 @@ export const SLUG_TO_ASSISTANT: Record<string, string> = {
   "branch-chat": "branch_chat_agent",
   "reasoning-tokens": "reasoning_tokens_agent",
   "structured-output": "structured_output_agent",
+  "message-queues": "message_queues_agent",
+  "join-rejoin": "join_rejoin_agent",
 };
