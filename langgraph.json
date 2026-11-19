@@ -8,6 +8,7 @@
     "reasoning_tokens_agent": "./agents/reasoning-tokens.ts:agent",
     "structured_output_agent": "./agents/structured-output.ts:agent",
     "message_queues_agent": "./agents/message-queues.ts:agent",
-    "join_rejoin_agent": "./agents/join-rejoin.ts:agent"
+    "join_rejoin_agent": "./agents/join-rejoin.ts:agent",
+    "time_travel_agent": "./agents/time-travel.ts:agent"
   }
 }

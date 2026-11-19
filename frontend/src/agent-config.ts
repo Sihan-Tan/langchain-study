@@ -20,4 +20,5 @@ export const SLUG_TO_ASSISTANT: Record<string, string> = {
   "structured-output": "structured_output_agent",
   "message-queues": "message_queues_agent",
   "join-rejoin": "join_rejoin_agent",
+  "time-travel": "time_travel_agent",
 };

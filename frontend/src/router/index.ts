@@ -9,6 +9,7 @@ import ReasoningTokensPreview from "@/patterns/reasoning-tokens/Preview.vue";
 import StructuredOutputPreview from "@/patterns/structured-output/Preview.vue";
 import MessageQueuesPreview from "@/patterns/message-queues/Preview.vue";
 import JoinRejoinChatPreview from "@/patterns/join-rejoin/Preview.vue";
+import TimeTravelPreview from "@/patterns/time-travel/Preview.vue";
 
 import PatternListView from "@/components/PatternListView.vue";
 
@@ -21,6 +22,7 @@ export const ROUTE_SLUGS = [
   "structured-output",
   "message-queues",
   "join-rejoin",
+  "time-travel",
 ] as const;
 
 const routes: RouteRecordRaw[] = [
@@ -72,6 +74,11 @@ const routes: RouteRecordRaw[] = [
     path: "/join-rejoin",
     name: "join-rejoin",
     component: JoinRejoinChatPreview,
+  },
+  {
+    path: "/time-travel",
+    name: "time-travel",
+    component: TimeTravelPreview,
   },
   { path: "/:pathMatch(.*)*", redirect: "/" },
 ];

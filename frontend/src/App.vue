@@ -10,6 +10,8 @@ const ENTRIES = [
   { name: "reasoning-tokens", label: "Reasoning Tokens" },
   { name: "structured-output", label: "Structured Output" },
   { name: "message-queues", label: "Message Queues" },
+  { name: "join-rejoin", label: "Join-Rejoin" },
+  { name: "time-travel", label: "Time Travel" },
 ];
 
 const route = useRoute();

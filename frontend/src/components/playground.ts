@@ -9,3 +9,4 @@ export { default as Markdown } from "./Markdown.vue";
 export { default as JsonViewer } from "./cards/JsonViewer.vue";
 export { default as SubAgentCard } from "./cards/SubAgentCard.vue";
 export { default as ToolCallCard } from "./chat/ToolCallCard.vue";
+export { default as SplitView } from "./layout/SplitView.vue";

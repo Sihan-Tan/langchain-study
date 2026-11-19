@@ -18,7 +18,7 @@ onUpdated(() => {
 <template>
   <div
     :class="[
-      'flex flex-col bg-surface min-w-4xl',
+      'flex flex-col bg-surface min-w-xl',
       props.embedded ? 'min-h-0 flex-1' : 'h-full',
       props.class,
     ]"
