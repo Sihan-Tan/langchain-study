@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref, computed, onMounted, onUnmounted } from "vue";
 import type { ToolCallFromTool } from "@langchain/vue";
-import type { weatherTool } from "@langchain/playground-agents";
+import type { weatherTool } from "@tools/index";
 
 const props = defineProps<{
   toolCall: ToolCallFromTool<typeof weatherTool>;

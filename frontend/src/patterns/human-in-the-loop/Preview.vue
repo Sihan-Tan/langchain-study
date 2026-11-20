@@ -2,7 +2,7 @@
 import { computed, ref } from "vue";
 import { useStream } from "@langchain/vue";
 import { AIMessage, HumanMessage, type HITLRequest, type HITLResponse } from "langchain";
-import type { humanInTheLoopAgent } from "@langchain/playground-agents";
+import type { agent as humanInTheLoopAgent } from "@agents/human-in-the-loop";
 
 import { SLUG_TO_ASSISTANT } from "@/constants";
 import {

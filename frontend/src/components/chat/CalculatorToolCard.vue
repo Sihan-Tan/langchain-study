@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import type { ToolCallFromTool } from "@langchain/vue";
-import type { calculatorTool } from "@langchain/playground-agents";
+import type { calculatorTool } from "@tools/index";
 
 defineProps<{
   toolCall: ToolCallFromTool<typeof calculatorTool>;

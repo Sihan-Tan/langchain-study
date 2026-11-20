@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import type { ToolCallFromTool } from "@langchain/vue";
-import type { searchWebTool } from "@langchain/playground-agents";
+import type { searchWebTool } from "@tools/index";
 
 defineProps<{
   toolCall: ToolCallFromTool<typeof searchWebTool>;

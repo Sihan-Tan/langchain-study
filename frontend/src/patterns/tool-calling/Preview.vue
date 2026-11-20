@@ -2,7 +2,7 @@
 import { ref } from "vue";
 import { useStream } from "@langchain/vue";
 import { HumanMessage, AIMessage } from "langchain";
-import type { toolCallingAgent } from "@langchain/playground-agents";
+import type { agent as toolCallingAgent } from "@agents/tool_agent";
 
 import { SLUG_TO_ASSISTANT } from "@/constants";
 import {
